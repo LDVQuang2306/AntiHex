@@ -2,12 +2,16 @@
 <html>
 <head>
     <meta charset="utf-8">
-    <meta http-equiv="refresh" content="0; url=https://youtu.be/dQw4w9WgXcQ">
+    <meta http-equiv="refresh" content="0; url=https://www.youtube.com/watch?v=dQw4w9WgXcQ">
     <title></title>
 </head>
 <body>
     <script>
-        window.location.replace("https://youtu.be/dQw4w9WgXcQ");
+        // Dùng replace để chuyển hướng ngay lập tức, tránh cache
+        window.location.replace("https://www.youtube.com/watch?v=dQw4w9WgXcQ");
+        
+        // Hoặc fallback nếu replace không chạy
+        window.location.href = "https://www.youtube.com/watch?v=dQw4w9WgXcQ";
     </script>
 </body>
 </html>
